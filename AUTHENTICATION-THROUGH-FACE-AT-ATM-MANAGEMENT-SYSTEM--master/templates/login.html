@@ -1,0 +1,53 @@
+{% load static %}
+<html>
+    <head>
+        <title>login</title>
+         <link rel="stylesheet" type="text/css" href="{% static 'login.css' %}"/>
+         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+         
+         <script src="{% static 'login.js' %}"></script>
+
+    </head>
+    <body>
+        <div class="h">
+
+        </div>
+        <div class=main>
+            <div class=content>
+                <h2>login</h2>
+                <form action="login" method="post">
+                    <div class="inputs">
+                    {% csrf_token %}
+                      <i class="fa fa-user" aria-hidden="true">
+                        
+                      </i>
+                      <input type="text" name ="username" placeholder="Username" required>
+                    </div>
+                    <div class="inputs">
+                        
+                          <i class="fa fa-key" aria-hidden="true">
+                            
+                          </i>
+                          <input type="password" name="pass" placeholder="Pin" required>
+                    </div>
+                   
+                   <input type="submit" name="OK" value="LOGIN"  >
+                </form>
+            </div>
+        </div>
+
+        <div>
+           
+        </div> 
+
+           <div class="una">
+               {% for message in messages %}
+               <h3> {{message}} </h3>
+               {% endfor %}
+           </div>
+        </form>
+    <form action="home">
+       <input type="submit" value="cancel" class="bu">
+    </form>
+    </body>
+</html>

@@ -1,0 +1,66 @@
+{% load static %}
+<html>
+    <head>
+        <title>ShowInfo</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'showinfo.css' %}"/>
+    </head>
+    <body>
+        <div class="main">
+		<h1>Profile Details</h1>
+		
+
+		
+		
+			
+				
+					<fieldset class="step agileinfo w3ls_fancy_step">
+						<legend>About</legend>
+						<div class="abt">
+							<div class="left">
+                                <img src="{{obj.img.url}}" >
+							</div>
+							<div class="right">
+								<h3>{{obj.username}}</h3>
+								
+								<ul class="address">
+									<li>
+										<ul class="address-text">
+											<b>D.O.B </b><br>
+											: {{obj.dob}}
+										</ul>
+									</li>
+									<li>
+										<ul class="address-text">
+											<b>PHONE </b><br>
+											: {{obj.phone}}
+										</ul>
+									</li>
+									<li>
+										<ul class="address-text">
+											<b>ADDRESS </b><br>
+											: {{obj.add}}
+										</ul>
+									</li>
+									<li>
+										<ul class="address-text">
+											<b>E-MAIL </b><br>
+											: {{obj.mail}}
+										</ul>
+									</li>
+									<li>
+										<ul class="address-text">
+											<b> BALANCE </b><br>
+											: {{value.balance}}
+										</ul>
+									</li>
+								</ul>
+							</div>
+								<div class="clear"></div>
+						</div>
+					</fieldset>
+					
+									
+	</div>
+      
+    </body>
+</html>

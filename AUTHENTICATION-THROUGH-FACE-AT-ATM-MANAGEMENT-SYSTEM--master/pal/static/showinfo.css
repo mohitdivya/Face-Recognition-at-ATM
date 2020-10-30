@@ -1,0 +1,36 @@
+body{
+margin: 0;
+padding: 0;
+border: 0;
+font-size: 100%;
+font: inherit;
+vertical-align: baseline;
+background-color: grey;
+color: honeydew;
+font-family: 'Open Sans', sans-serif;
+}
+img{
+    
+    margin-top: 11%;
+    object-fit: cover;
+    min-height: 275px;
+    width: 27%;
+    float: left;
+}
+.right {
+    float: right;
+    width: 68%;
+    text-align: left;
+}
+ul.address {
+    margin-top: 1.5em;
+    border-top: 1px solid #AFAFAF;
+    padding-top: 0.5em;
+}
+.main {
+    margin: 3em auto;
+    text-align: center;
+    width: 670px;
+    position: relative;
+    height: 100%;
+}

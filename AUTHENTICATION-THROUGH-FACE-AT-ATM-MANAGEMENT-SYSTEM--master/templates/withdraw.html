@@ -1,0 +1,27 @@
+{% load static %}
+<html>
+    <head>
+        <title> Withdraw </title>
+        <link rel="stylesheet" type="text/css" href="{% static 'deposit.css' %}"/>
+    </head>
+    <body>
+        <form action="withdraw" method="POST" class="f">
+            {% csrf_token %}
+            <div class= "bal">
+            Current balance : {{value.balance}} <br></div>
+            <input type="text" placeholder="Enter The Amount" name="withdraw" class="deposit">
+            <input type="submit" value="Click here"  class="submit">
+            <div class= "bal">
+            {% for message in messages%}
+            <h3>{{message}}</h3>
+            {% endfor %}
+            </div>
+        </form>
+        <form action="Select">
+            <input type="submit" value="Back" class="bu">
+         </form>
+    </body>
+</html>
+        
+       
+    

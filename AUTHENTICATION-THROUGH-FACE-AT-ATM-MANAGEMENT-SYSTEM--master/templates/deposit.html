@@ -1,0 +1,18 @@
+{% load static %}
+<html>
+    <head>
+        <title>Deposit</title>
+        <link rel="stylesheet" type="text/css" href="{% static 'deposit.css' %}"/>
+    </head>
+    <body>
+       
+        <form action="deposit" method="post" class="f">
+            {% csrf_token %}
+            <input type="text" placeholder="Enter The Amount" name="deposit" class="deposit">
+            <input type="submit" value="Submit" class="submit">
+        </form>
+        <form action="Select">
+            <input type="submit" value="Back" class="bu">
+         </form>
+    </body>
+</html>
